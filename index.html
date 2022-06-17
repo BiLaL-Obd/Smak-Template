@@ -13,11 +13,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Fira+Sans:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;400;500;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- start header  -->
     <header>
-        <div class="container">
+        <div class="container" id="top">
             <a href="#" class="logo" id="logo">
                 <!-- <img src="images/logo.png" alt=""> -->
                 <span>S</span>maK
@@ -28,13 +31,13 @@
                     <span></span>
                     <span></span>
                 </span>
-                <ul>
+                <ul class="navigation">
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#services">Services</a> </li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -162,7 +165,7 @@
     </div>
     <!-- end description -->
     <!-- start works -->
-    <div class="works">
+    <div class="works" id="video">
         <div class="container">
             <div class="main-title">
                 <h3>Our Works</h>
@@ -174,108 +177,110 @@
                         reprehenderit obcaecati sit minus deleniti ad at nisi
                     </p>
             </div>
-            <ul class="shuffle">
-                <li class="active">All</li>
-                <li>Web Design</li>
-                <li>Graphic Design</li>
-                <li>Photography</li>
-                <li>Elustration</li>
-            </ul>
-            <div class="work">
-                <div class="image">
-                    <img src="images/work.png" alt="video">
-                </div>
-                <div class="text">
-                    <h3>Our Awesome Image</h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quae, quisquam libero iusto pariatur ut
-                        unde vero aliquam sint velit, accusamus animi iste? Earum cumque eveniet enim a fuga! Harum.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima recusandae hic neque perspiciatis
-                        reprehenderit obcaecati sit minus deleniti ad at nisi
-                    </p>
-                    <a href="#">View Live</a>
+            <div class="content-work">
+                <ul class="shuffle">
+                    <li class="active" data-work=".image">All</li>
+                    <li data-work=".web">Web Design</li>
+                    <li data-work=".gfx">Graphic Design</li>
+                    <li data-work=".photo">Photography</li>
+                    <li data-work=".elustration">Elustration</li>
+                </ul>
+                <div class="work">
+                    <div class="image">
+                        <img src="images/work.png" alt="video">
+                    </div>
+                    <div class="text">
+                        <h3>Our Awesome Image</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quae, quisquam libero iusto pariatur ut
+                            unde vero aliquam sint velit, accusamus animi iste? Earum cumque eveniet enim a fuga! Harum.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima recusandae hic neque perspiciatis
+                            reprehenderit obcaecati sit minus deleniti ad at nisi
+                        </p>
+                        <a href="#">View Live</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="work-image">
-            <div class="image">
+            <div class="image web">
                 <img src="images/work-01.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
                     <p>Graphic Design</p>
                 </div>
             </div>
-            <div class="image">
+            <div class="image gfx">
                 <img src="images/work-02.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
                     <p>Graphic Design</p>
                 </div>
             </div>
-            <div class="image">
+            <div class="image photo">
                 <img src="images/work-03.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
                     <p>Graphic Design</p>
                 </div>
             </div>
-            <div class="image">
+            <div class="image elustration">
                 <img src="images/work-04.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
                     <p>Graphic Design</p>
                 </div>
             </div>
-            <div class="image">
+            <div class="image web">
                 <img src="images/work-05.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
                     <p>Graphic Design</p>
                 </div>
             </div>
-            <div class="image">
+            <div class="image web">
                 <img src="images/work-01.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
                     <p>Graphic Design</p>
                 </div>
             </div>
-            <div class="image">
+            <div class="image elustration">
                 <img src="images/work-04.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
                     <p>Graphic Design</p>
                 </div>
             </div>
-            <div class="image">
+            <div class="image photo">
                 <img src="images/work-03.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
                     <p>Graphic Design</p>
                 </div>
             </div>
-            <div class="image">
+            <div class="image gfx">
                 <img src="images/work-02.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
                     <p>Graphic Design</p>
                 </div>
             </div>
-            <div class="image">
+            <div class="image web">
                 <img src="images/work-01.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
                     <p>Graphic Design</p>
                 </div>
             </div>
-            <div class="image">
+            <div class="image gfx">
                 <img src="images/work-02.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
                     <p>Graphic Design</p>
                 </div>
             </div>
-            <div class="image">
+            <div class="image photo">
                 <img src="images/work-03.jpg" alt="">
                 <div class="text">
                     <h3>Simple Image</h3>
@@ -290,7 +295,7 @@
             <div class="portfolio">
                 <h3 class="bold-title">Do You Like Our portfolio?</h3>
                 <p class="p-under-boldTitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sed non vero!Est sed non vero!</p>
-                <a href="#">Contact Us</a>
+                <a href="#contact">Contact Us</a>
             </div>
         </div>
         <div class="proud" id="proud">
@@ -301,19 +306,19 @@
                 </div>
                 <div class="proud-content">
                     <div class="box">
-                        <h3>1600</h3>
+                        <h3 data-goal="1600">1600</h3>
                         <p>Happy Clients</p>
                     </div>
                     <div class="box">
-                        <h3>3200</h3>
+                        <h3 data-goal="3200">3200</h3>
                         <p>completed Project</p>
                     </div>
                     <div class="box">
-                        <h3>40</h3>
+                        <h3 data-goal="40">40</h3>
                         <p>Awards</p>
                     </div>
                     <div class="box">
-                        <h3>20 000</h3>
+                        <h3 data-goal="20000">20 000</h3>
                         <p>Coffee Drinks</p>
                     </div>
                 </div>
@@ -322,7 +327,7 @@
     </div>
     <!-- end works -->
     <!-- start About -->
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="main-title">
                 <h3>About Us</h>
@@ -388,31 +393,31 @@
                     <p class="p-under-boldTitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sed non vero!Est sed non vero!</p>
                 </div>
                 <div class="team-profile">
-                    <div class="image">
+                    <div class="image active" data-skill=".john1">
                         <img src="images/about-01].jpg" alt="">
                         <div class="caption">
-                            <h3>John Doe</h3>
+                            <h3>John Doe 1</h3>
                             <p>Creative Director</p>
                         </div>
                     </div>
-                    <div class="image">
+                    <div class="image" data-skill=".john2">
                         <img src="images/about-01].jpg" alt="">
                         <div class="caption">
-                            <h3>John Doe</h3>
+                            <h3>John Doe 2</h3>
                             <p>Art Director</p>
                         </div>
                     </div>
-                    <div class="image">
+                    <div class="image" data-skill=".john3">
                         <img src="images/about-01].jpg" alt="">
                         <div class="caption">
-                            <h3>John Doe</h3>
+                            <h3>John Doe 3</h3>
                             <p>Web Developer</p>
                         </div>
                     </div>
-                    <div class="image">
+                    <div class="image" data-skill=".john4">
                         <img src="images/about-01].jpg" alt="">
                         <div class="caption">
-                            <h3>John Doe</h3>
+                            <h3>John Doe 4</h3>
                             <p>Photographer</p>
                         </div>
                     </div>
@@ -420,58 +425,230 @@
             </div>
         </div>
         <div class="our-skills">
-            <div class="information">
-                <div class="container">
-                    <div class="info">
-                        <div class="head-info">
-                            <h3>John Doe</h3>
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <div class="info-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, aperiam esse animi, vitae
-                            repudiandae praesentium accusantium error cumque, rerum quia nisi vero eius perspiciatis eum
-                            reprehenderit nemo alias illum vel.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa reiciendis dolor accusantium voluptas,
-                            eligendi inventore quod facilis molestiae error aliquid maxime.
-                            <div class="social-info">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-twitter"></i>
+            <div class="box-skill john1">
+                <div class="information">
+                    <div class="container">
+                        <div class="info">
+                            <div class="head-info">
+                                <h3>John Doe 1</h3>
+                                <i class="fa-solid fa-xmark" data-close = 'john1'></i>
+                            </div>
+                            <div class="info-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, aperiam esse animi, vitae
+                                repudiandae praesentium accusantium error cumque, rerum quia nisi vero eius perspiciatis eum
+                                reprehenderit nemo alias illum vel.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa reiciendis dolor accusantium voluptas,
+                                eligendi inventore quod facilis molestiae error aliquid maxime.
+                                <div class="social-info">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            
-            </div>
-            <div class="skills">
-                <div class="container">
-                    <div class="title">
-                        <h3>Skills</h3>
-                        <p class="p-under-boldTitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sed non vero!Est sed non vero!</p>
+                <div class="skills">
+                    <div class="container">
+                        <div class="title">
+                            <h3>Skills</h3>
+                            <p class="p-under-boldTitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sed non vero!Est sed non vero!</p>
+                        </div>
+                        <div class="box">
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="90">90%</div>
+                                    <div class="text">HTML&CSS</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="96">96%</div>
+                                    <div class="text">AI & PS</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="85">85%</div>
+                                    <div class="text">JS & PHP</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="94">94%</div>
+                                    <div class="text">Photography</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-content">
-                        <div class="skill">
-                            <div class="c-top" ></div>
-                            <div class="c-bottom"></div>
-                            <div class="c-info">90%</div>
-                            <div class="c-inf">HTML&amp;CSS</div>
+                </div>
+            </div>
+            <div class="box-skill john2">
+                <div class="information">
+                    <div class="container">
+                        <div class="info">
+                            <div class="head-info">
+                                <h3>John Doe 2</h3>
+                                <i class="fa-solid fa-xmark" data-close = 'john2'></i>
+                            </div>
+                            <div class="info-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, aperiam esse animi, vitae
+                                repudiandae praesentium accusantium error cumque, rerum quia nisi vero eius perspiciatis eum
+                                reprehenderit nemo alias illum vel.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa reiciendis dolor accusantium voluptas,
+                                eligendi inventore quod facilis molestiae error aliquid maxime.
+                                <div class="social-info">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skill">
-                            <div class="c-top" ></div>
-                            <div class="c-bottom"></div>
-                            <div class="c-info">96%</div>
-                            <div class="c-inf">AI &amp; PS</div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="container">
+                        <div class="title">
+                            <h3>Skills</h3>
+                            <p class="p-under-boldTitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sed non vero!Est sed non vero!</p>
                         </div>
-                        <div class="skill">
-                            <div class="c-top" ></div>
-                            <div class="c-bottom"></div>
-                            <div class="c-info">85%</div>
-                            <div class="c-inf">js &amp; Php</div>
+                        <div class="box">
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="80">80%</div>
+                                    <div class="text">HTML&CSS</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="75">75%</div>
+                                    <div class="text">AI & PS</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="72">72%</div>
+                                    <div class="text">JS & PHP</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="94">94%</div>
+                                    <div class="text">Photography</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skill">
-                            <div class="c-top" ></div>
-                            <div class="c-bottom"></div>
-                            <div class="c-info">94%</div>
-                            <div class="c-inf">Photography</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-skill john3">
+                <div class="information">
+                    <div class="container">
+                        <div class="info">
+                            <div class="head-info">
+                                <h3>John Doe 3</h3>
+                                <i class="fa-solid fa-xmark" data-close = 'john3'></i>
+                            </div>
+                            <div class="info-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, aperiam esse animi, vitae
+                                repudiandae praesentium accusantium error cumque, rerum quia nisi vero eius perspiciatis eum
+                                reprehenderit nemo alias illum vel.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa reiciendis dolor accusantium voluptas,
+                                eligendi inventore quod facilis molestiae error aliquid maxime.
+                                <div class="social-info">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="container">
+                        <div class="title">
+                            <h3>Skills</h3>
+                            <p class="p-under-boldTitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sed non vero!Est sed non vero!</p>
+                        </div>
+                        <div class="box">
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="90">90%</div>
+                                    <div class="text">HTML&CSS</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="80">80%</div>
+                                    <div class="text">AI & PS</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="95">95%</div>
+                                    <div class="text">JS & PHP</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="75">75%</div>
+                                    <div class="text">Photography</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-skill john4">
+                <div class="information">
+                    <div class="container">
+                        <div class="info">
+                            <div class="head-info">
+                                <h3>John Doe 4</h3>
+                                <i class="fa-solid fa-xmark" data-close = 'john4'></i>
+                            </div>
+                            <div class="info-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, aperiam esse animi, vitae
+                                repudiandae praesentium accusantium error cumque, rerum quia nisi vero eius perspiciatis eum
+                                reprehenderit nemo alias illum vel.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa reiciendis dolor accusantium voluptas,
+                                eligendi inventore quod facilis molestiae error aliquid maxime.
+                                <div class="social-info">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="container">
+                        <div class="title">
+                            <h3>Skills</h3>
+                            <p class="p-under-boldTitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sed non vero!Est sed non vero!</p>
+                        </div>
+                        <div class="box">
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="95">95%</div>
+                                    <div class="text">HTML&CSS</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="96">96%</div>
+                                    <div class="text">AI & PS</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="92">92%</div>
+                                    <div class="text">JS & PHP</div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="info">
+                                    <div class="chart" data-percent="80">80%</div>
+                                    <div class="text">Photography</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -480,7 +657,7 @@
     </div>
     <!-- End About -->
     <!-- start Clients -->
-    <div class="clients">
+    <div class="clients" id="clients">
         <div class="container">
             <div class="main-title">
                 <h3>Our Clients</h>
@@ -492,29 +669,43 @@
                         reprehenderit obcaecati sit minus deleniti ad at nisi
                     </p>
             </div>
-            <div class="client-content">
-                <div class="client">
-                    <img src="images/client-01.png" alt="">
-                </div>
-                <div class="client">
-                    <img src="images/client-02.png" alt="">
-                </div>
-                <div class="client">
-                    <img src="images/client-03.png" alt="">
-                </div>
-                <div class="client">
-                    <img src="images/client-04.png" alt="">
-                </div>
-                <div class="client">
-                    <img src="images/client-01.png" alt="">
-                </div>
-                <div class="client">
-                    <img src="images/client-02.png" alt="">
+            <div class="client-content mySwiper swiper">
+                <div class="content swiper-wrapper">
+                    <div class="client swiper-slide">
+                        <img src="images/client-01.png" alt="">
+                    </div>
+                    <div class="client swiper-slide">
+                        <img src="images/client-02.png" alt="">
+                    </div>
+                    <div class="client swiper-slide">
+                        <img src="images/client-03.png" alt="">
+                    </div>
+                    <div class="client swiper-slide">
+                        <img src="images/client-04.png" alt="">
+                    </div>
+                    <div class="client swiper-slide">
+                        <img src="images/client-01.png" alt="">
+                    </div>
+                    <div class="client swiper-slide">
+                        <img src="images/client-02.png" alt="">
+                    </div>
+                    <div class="client swiper-slide">
+                        <img src="images/client-03.png" alt="">
+                    </div>
+                    <div class="client swiper-slide">
+                        <img src="images/client-04.png" alt="">
+                    </div>
+                    <div class="client swiper-slide">
+                        <img src="images/client-01.png" alt="">
+                    </div>
+                    <div class="client swiper-slide">
+                        <img src="images/client-02.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="bundle">
-                <i class="fa-solid fa-angle-left angle"></i>
-                <i class="fa-solid fa-angle-right angle"></i>
+                <i class="fa-solid fa-angle-left angle button-prev"></i>
+                <i class="fa-solid fa-angle-right angle button-next"></i>
             </div>
             
         </div>
@@ -522,24 +713,53 @@
     <!-- end Clients -->
     <!-- start quote -->
     <div class="quote">
-        <div class="container">
-            <p>
-                &quot;
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos odit laudantium quod ex nemo commodi, totam laboriosam at. Laboriosam labore eaque excepturi delectus ipsum nihil exercitationem praesentium deleniti ipsam impedit.
-                &quot;
-            </p>
-            <p>Daniel J.Boostria</p>
-           <ul class="bundle">
+        <div class="container swip-container swiper">
+            <div class="content swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>
+                        &quot;
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos odit laudantium quod ex nemo commodi, totam laboriosam at. Laboriosam labore eaque excepturi delectus ipsum nihil exercitationem praesentium deleniti ipsam impedit.
+                        &quot;
+                    </p>
+                    <p>Daniel J.Boostria</p>
+                </div>
+                <div class="swiper-slide">
+                    <p>
+                        &quot;
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos odit laudantium quod ex nemo commodi, totam laboriosam at. Laboriosam labore eaque excepturi delectus ipsum nihil exercitationem praesentium deleniti ipsam impedit.
+                        &quot;
+                    </p>
+                    <p>Daniel J.Boostria</p>
+                </div>
+                <div class="swiper-slide">
+                    <p>
+                        &quot;
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos odit laudantium quod ex nemo commodi, totam laboriosam at. Laboriosam labore eaque excepturi delectus ipsum nihil exercitationem praesentium deleniti ipsam impedit.
+                        &quot;
+                    </p>
+                    <p>Daniel J.Boostria</p>
+                </div>
+                <div class="swiper-slide">
+                    <p>
+                        &quot;
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos odit laudantium quod ex nemo commodi, totam laboriosam at. Laboriosam labore eaque excepturi delectus ipsum nihil exercitationem praesentium deleniti ipsam impedit.
+                        &quot;
+                    </p>
+                    <p>Daniel J.Boostria</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+           <!-- <ul class="bundle">
                <li class="active"></li>
                <li></li>
                <li></li>
                <li></li>
-           </ul>
+           </ul> -->
         </div>
     </div>
     <!-- End quote -->
     <!-- start Contact -->
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container">
             <div class="main-title">
                 <h3>Contact Us</h>
@@ -574,7 +794,7 @@
     </div>
     <!-- end Contact -->
     <!-- start message -->
-    <div class="message">
+    <div class="message" >
         <div class="container">
             <div class="title">
                 <h2>Send Us A Message</h2>
@@ -606,5 +826,74 @@
         </div>
     </footer>
     <!-- end footer  -->
+
+    <!-- Start Scroll Top -->
+    <a class="scroll-top" href="#top">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!-- End Scroll Top -->
+    
+    <script src="js/main.js"></script>
+
+    <!-- Swiper Js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="jqueryPath/jquery.easypiechart.js"></script>
+
+    <script>
+        var swiper = new Swiper(".swip-container", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+      });
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
+        },
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+      });
+
+      $(function () {
+        $(".chart").easyPieChart({
+          size: 100,
+          barColor: "#fbe104",
+          scaleColor: false,
+          lineWidth: 6,
+          trackColor: "#fff",
+          lineCap: "circle",
+          animate: 1100,
+        });
+      });
+    </script>
 </body>
 </html>
